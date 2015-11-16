@@ -5,8 +5,8 @@ Created on Tue Oct 27 17:47:48 2015
 @author: ruhansa
 """
 import json
-# if you are using python 3, you should 
-# import urllib.request 
+# if you are using python 3, you should
+# import urllib.request
 import urllib2
 
 
@@ -29,4 +29,4 @@ rank = 1
 for doc in docs:
     outf.write(qid + ' ' + 'Q0' + ' ' + str(doc['id']) + ' ' + str(rank) + ' ' + str(doc['score']) + ' ' + IRModel + '\n')
     rank += 1
-outf.close()
+outf.close()--------
