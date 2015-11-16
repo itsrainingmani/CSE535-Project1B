@@ -11,12 +11,12 @@ import urllib2
 
 
 # change the url according to your own koding username and query
-inurl = 'http://ruhan.koding.io:8983/solr/partb/select?q=*%3A*&fl=id%2Cscore&wt=json&indent=true&rows=1000'
-outfn = 'path to your file.txt'
+inurl = 'http://meganarutokage.koding.io:8983/solr/eval/select?q=*Russia%27s+intervention+in+Syria*&fl=id%2Cscore&wt=json&indent=true&rows=1000'
+outfn = 'myresult.txt'
 
 
 # change query id and IRModel name accordingly
-qid = ''
+qid = '001'
 IRModel='default'
 outf = open(outfn, 'a+')
 data = urllib2.urlopen(inurl)
@@ -29,4 +29,4 @@ rank = 1
 for doc in docs:
     outf.write(qid + ' ' + 'Q0' + ' ' + str(doc['id']) + ' ' + str(rank) + ' ' + str(doc['score']) + ' ' + IRModel + '\n')
     rank += 1
-outf.close()--------
+outf.close()
