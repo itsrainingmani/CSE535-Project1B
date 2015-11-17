@@ -7,4 +7,4 @@
 007+lang:en US+air+dropped+50+tons+of+Ammo+on+Syria
 008+lang:de Assad+und+ISIS+auf+dem+Vormarsch
 009+lang:de Russische+Botschaft+in+Syrien+von+Granaten+getroffen
-010+lang:ru Бильд.+Внутренний+документ+говорит,+что+Германия+примет+1,5+млн+беженцев+в+этом+году
+010+lang:ru Бильд. Внутренний документ говорит, что Германия примет 1,5 млн беженцев в этом году
