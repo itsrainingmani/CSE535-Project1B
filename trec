@@ -1,0 +1,71 @@
+#! /bin/bash
+
+echo "VSM"
+trec_eval -q -c -M 1000 qrel.txt VSMresults.txt>>trecVSM.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt VSMresults.txt>>trecVSM.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt VSMresults.txt>>trecVSM.txt
+trec_eval -q -c -M 1000 -m map qrel.txt VSMresults.txt>>trecVSM.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt VSMresults.txt>>trecVSM.txt
+
+echo "VSM-1"
+trec_eval -q -c -M 1000 qrel.txt VSMresults-1.txt>>trecVSM-1.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt VSMresults-1.txt>>trecVSM-1.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt VSMresults-1.txt>>trecVSM-1.txt
+trec_eval -q -c -M 1000 -m map qrel.txt VSMresults-1.txt>>trecVSM-1.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt VSMresults-1.txt>>trecVSM-1.txt
+
+echo "VSM-2"
+trec_eval -q -c -M 1000 qrel.txt VSMresults-2.txt>>trecVSM-2.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt VSMresults-2.txt>>trecVSM-2.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt VSMresults-2.txt>>trecVSM-2.txt
+trec_eval -q -c -M 1000 -m map qrel.txt VSMresults-2.txt>>trecVSM-2.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt VSMresults-2.txt>>trecVSM-2.txt
+
+echo "LM"
+trec_eval -q -c -M 1000 qrel.txt LMresults.txt>>trecLM.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt LMresults.txt>>trecLM.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt LMresults.txt>>trecLM.txt
+trec_eval -q -c -M 1000 -m map qrel.txt LMresults.txt>>trecLM.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt LMresults.txt>>trecLM.txt
+
+echo "LM-1"
+trec_eval -q -c -M 1000 qrel.txt LMresults-1.txt>>trecLM-1.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt LMresults-1.txt>>trecLM-1.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt LMresults-1.txt>>trecLM-1.txt
+trec_eval -q -c -M 1000 -m map qrel.txt LMresults-1.txt>>trecLM-1.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt LMresults-1.txt>>trecLM-1.txt
+
+echo "LM-2"
+trec_eval -q -c -M 1000 qrel.txt LMresults-2.txt>>trecLM-2.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt LMresults-2.txt>>trecLM-2.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt LMresults-2.txt>>trecLM-2.txt
+trec_eval -q -c -M 1000 -m map qrel.txt LMresults-2.txt>>trecLM-2.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt LMresults-2.txt>>trecLM-2.txt
+
+echo "BM25"
+trec_eval -q -c -M 1000 qrel.txt BM25results.txt>>trecBM25.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt BM25results.txt>>trecBM25.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt BM25results.txt>>trecBM25.txt
+trec_eval -q -c -M 1000 -m map qrel.txt BM25results.txt>>trecBM25.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt BM25results.txt>>trecBM25.txt
+
+echo "BM25-1"
+trec_eval -q -c -M 1000 qrel.txt BM25results-1.txt>>trecBM25-1.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt BM25results-1.txt>>trecBM25-1.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt BM25results-1.txt>>trecBM25-1.txt
+trec_eval -q -c -M 1000 -m map qrel.txt BM25results-1.txt>>trecBM25-1.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt BM25results-1.txt>>trecBM25-1.txt
+
+echo "BM25-2"
+trec_eval -q -c -M 1000 qrel.txt BM25results-2.txt>>trecBM25-2.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt BM25results-2.txt>>trecBM25-2.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt BM25results-2.txt>>trecBM25-2.txt
+trec_eval -q -c -M 1000 -m map qrel.txt BM25results-2.txt>>trecBM25-2.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt BM25results-2.txt>>trecBM25-2.txt
+
+echo "BM25-k1-1"
+trec_eval -q -c -M 1000 qrel.txt BM25results-k1-1.txt>>trecBM25-k1-1.txt
+trec_eval -q -c -M 1000 -m ndcg qrel.txt BM25results-k1-1.txt>>trecBM25-k1-1.txt
+trec_eval -q -c -M 1000 -m set_F.0.5 qrel.txt BM25results-k1-1.txt>>trecBM25-k1-1.txt
+trec_eval -q -c -M 1000 -m map qrel.txt BM25results-k1-1.txt>>trecBM25-k1-1.txt
+trec_eval -q -c -M 1000 -m bpref qrel.txt BM25results-k1-1.txt>>trecBM25-k1-1.txt
